@@ -1,7 +1,13 @@
 #include <iostream>
+#include "ItemToPurchase.h"
+
 using namespace std;
 
-#include "ItemToPurchase.h"
+ItemToPurchase::ItemToPurchase() {
+  itemName = "none";
+  itemPrice = 0;
+  itemQuantity = 0;
+}
 
 string ItemToPurchase::GetName() {
   return itemName;
@@ -10,7 +16,6 @@ string ItemToPurchase::GetName() {
 void ItemToPurchase::SetName(string name) {
   itemName = name;
 }
-
 
 int ItemToPurchase::GetPrice() {
   return itemPrice;
@@ -27,4 +32,3 @@ int ItemToPurchase::GetQuantity() {
 void ItemToPurchase::SetQuantity(int quantity) {
   itemQuantity = quantity;
 }
-
